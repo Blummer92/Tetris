@@ -252,12 +252,21 @@ h2 {
   height: 75px;
 }
 
+@keyframes example {
+  from {top: 25px;}
+  to {top: 750px;}
+}
 .boxcontainer {
   position: absolute;
   left: 750px;
   top: 25px;
   width: 50px;
   height: 50px;
+  animation-name: example;
+  animation-iteration-count: 3;
+  animation-duration: 4s;
+  animation-delay: 2s;
+
 }
 
 .lblockcontainer {
@@ -266,6 +275,11 @@ h2 {
   top: 25px;
   width: 50px;
   height: 75px;
+  animation-name: example;
+  animation-iteration-count: 3;
+  animation-duration: 4s;
+  animation-delay: 4s;
+
 }
 
 .zblockcontainer {
@@ -274,6 +288,11 @@ h2 {
   top: 50px;
   width: 75px;
   height: 50px;
+  animation-name: example;
+  animation-iteration-count: 3;
+  animation-duration: 4s;
+  animation-delay: 6s;
+
 }
 
 .zblockcontainer.innerdisplayblock {
